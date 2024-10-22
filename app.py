@@ -5,7 +5,7 @@ import altair as alt
 import pydeck as pdk
 
 ### Data Load ###
-df = pd.read_csv('bikes_sales_sas/sales_order_items_processed.csv')
+df = pd.read_csv('sales_order_items_processed.csv')
 df['salesorderid'] = df['salesorderid'].astype(str)
 df['createdat'] = pd.to_datetime(df['createdat'], format='%Y-%m-%d')
 
